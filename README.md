@@ -7,17 +7,20 @@
 ## 先看整段路
 
 ```mermaid
-flowchart TB
-    A["痛點 → Hypothesis<br/>趕快做 Prototype"] --> B["用 ADR<br/>保存 Feature 與想法"]
-    B --> C["Validation Wheel<br/>＋ Implementation Wheel"]
-    C --> D["用既有資料<br/>佐證產品方向"]
-    D --> E["Prototype 反覆微調<br/>仍只有局部體驗"]
-    E --> F["重新理解問題<br/>缺少能交付給 Agent 的產品結構"]
-    F --> G["最近被朋友提點<br/>準備嘗試 User Story Map"]
-    G --> H["尚未實作<br/>是否有效仍未知"]
+flowchart LR
+    A["痛點／Hypothesis<br/>直接做 Prototype"]
+    B["ADR<br/>管理想法"]
+    C["驗證輪<br/>＋實作輪"]
+    D["既有資料<br/>難推導新產品形狀"]
+    E["User Story Mapping<br/>待實作驗證"]
+
+    A --> B --> C --> D --> E
+
+    E --> F["產品線<br/>切出 MVP"]
+    E --> G["溝通線<br/>找關鍵 20%"]
 ```
 
-這張圖只標示我走過的路。真正重要的不是方法名稱，而是每一次卡關後，我對問題的理解發生了什麼改變。
+這張圖只標示我走過的五段方法演變，以及目前分成產品實作與主管溝通的兩條下一步。真正重要的不是方法名稱，而是每一次卡關後，我對問題的理解發生了什麼改變。
 
 ## 起點：我想做的不是另一個金融資訊 App
 
